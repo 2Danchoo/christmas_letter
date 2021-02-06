@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2021년에 콩알에게</title>
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poor+Story&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #1C2C38;
+
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 150px auto 0px auto;
+
+            cursor: pointer;
+
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 250px;
+            height: 250px;
+
+            background-image: url(https://t1.daumcdn.net/cfile/tistory/99B7AD395C297D0A1E);
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 150px;
+
+            border: 3px solid white;
+            box-shadow: 0px 0px 30px 0px  rgb(253, 237, 17);
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .envelope {
+            margin: 150px auto 0px auto;
+        }
+
+
+
+        .messagebox {
+                background-color: ivory;
+
+                width: 400px;
+                margin: auto;
+
+                color: #0e1c29;
+
+                padding: 30px;
+
+                font-size: 20px;
+                line-height: 30px;
+
+                box-shadow: 0px 0px 10px 0px white;
+
+            }
+
+            .from {
+                text-align: right;
+                margin-bottom: 0px;
+            }
+
+            @media screen and (max-width: 760px) {
+                .messagebox {
+                    width: 300px;
+                    padding: 20px;
+                }
+            }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('앗, 어떻게 찾았찌! 사랑해 콩알♡');
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1> 콩알! 2021년도 잘 부탁해!</h1>
+        <div class="messagebox">
+            콩알! <br /><br/>
+            내가 파이썬으로 처음 만드는 웹페이지를 <br />
+            파이썬을 배우고 싶었던 이유인 너에게 <br />
+            이렇게 처음으로 보여주게 되어서 <br />
+            뭔가 뿌듯하면서도 <br/>
+            조금 부끄럽기도 하고 그래..ㅎㅎ <br />
+            아직은 모르는게 너무 많지만 <br/>
+            언젠가 함께 코딩하는 날도 오겠지..? <br/>
+            그 날을 위해 재밌게 배워볼게!! <br /> <br />
+            늘 고마워 <br /><br/>
+
+            <p class="from"> 2021.01.05 <br/> 바로니가 </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
